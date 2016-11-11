@@ -1,5 +1,5 @@
-INSERT INTO burgers(burger_name,devoured) VALUES ('Cheese Burger',true);
-INSERT INTO burgers(burger_name,devoured) VALUES ('Chicken Burger',true);
-INSERT INTO burgers(burger_name,devoured) VALUES ('HamBurger',false); 
-INSERT INTO burgers(burger_name,devoured) VALUES ('Deep-Fried burger',false); 
+INSERT INTO burgers(burger_name) VALUES ('Cheese Burger');
+INSERT INTO burgers(burger_name) VALUES ('Chicken Burger');
+INSERT INTO burgers(burger_name) VALUES ('HamBurger'); 
+INSERT INTO burgers(burger_name) VALUES ('Deep-Fried burger'); 
 /*select * from burgers;*/
