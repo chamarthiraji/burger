@@ -8,6 +8,14 @@ img {
     margin-left: -(X/2)px;
     margin-top: -(Y/2)px;
 }
+#title{
+  position: absolute;
+    top: 49%;
+    left: 42%;
+    margin-left: -(X/2)px;
+    margin-top: -(Y/2)px;
+
+}
 .box { 
    display: inline-block; 
    
@@ -23,10 +31,22 @@ img {
     }
 #list1{
 	position: relative;
-    left: -21%;
+    left: -25%;
 
 }
 #list2{
 	position: relative;
-	left: 27%;
+	left:-22%;
+}
+#devBt{
+  display: inline-block;
+}
+#addForm{
+  position: relative;
+  left: -25%;
+}
+#btS{
+     position: relative;
+  left: 35%;
+}
 }

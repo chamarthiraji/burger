@@ -1,43 +1,41 @@
 
 <div class="list">
-	<div class="box" id="list1">
-		<ul  >
-			
-			  {{#each burgers}}
-			    {{#unless this.devoured}}
-			     
-
-			        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-			           <li>
-			      	{{this.id}}.
-			        {{this.burger_name}}
-			        </li>
-			          <input type="hidden" name="devoured" value="true">
-			          <button type="submit">Devoure It!</button>
+	<div class="box " id="list1">		
+		<ul class="list-group">
+			{{#each burgers}}
+			  	{{#unless this.devoured}}
+			    <li class="list-group-item">
+			        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST" class="form-inline">
+			      	    {{this.id}}.
+			            {{this.burger_name}}
+			           <input type="hidden" name="devoured" value="true">
+			           <button type="submit" id="devBt">Devoure It!</button>
 			        </form>
-			      </li>
+			    </li>
 			    {{/unless}}
-			  {{/each}}
+			{{/each}}
 		</ul>
+		
 	</div>
-	<div class="box">
-	<form class="inputForm"  action="/create" method="POST">	
-		<input type="text" name="burgerName" value="" id ="burgerName"><br><br>
-		<button type="submit">Submit </button>
-	</form>	
-	<h3>Add a Burger</h3>
+	<div class="box" id="addForm">
+		<form class="inputForm"  action="/create" method="POST">	
+			<input type="text" name="burgerName" value="" id ="burgerName" class="form-control input-lg"><br>
+			<button type="submit" id="btS">Submit </button>
+		</form>	
+		<h6>Enter a burger you want to eat and click Submit button!</h6>
 	</div>
 	<div class="box" id="list2">
-		<ul >
+		<ul class="list-group">
 			{{#each burgers}}
 	    		{{#if this.devoured}}
-	     
+	     		<li class="list-group-item">
 	      			{{this.id}}.
 	      			{{this.burger_name}}
-	  
+	  			</li>
 	            {{/if}}
 	        {{/each}}
+	    </ul>
 
-		</ul>
+		
 	</div>
-	</div>			
+</div>			

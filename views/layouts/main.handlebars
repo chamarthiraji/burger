@@ -5,13 +5,18 @@ Here is the main HTML where handlebars will render to
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="./assets/css/burger_style.css">
 		<title>MVC With Burgers!</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/css/burger_style.css">		
 	</head>
 	<body>
-		<div>	
+		<div >
 			<img src="./assets/image/burger.png" align="middle"></p>
-			<h1>Eat Da Burger!</h1>
+			<div id="title" >
+				<h2><strong>Eat-Da-Burger!</strong></h2>
+			</div>
 		</div>	
 		{{{ body }}}
 	</body>
